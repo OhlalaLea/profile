@@ -1,0 +1,83 @@
+body{
+  font-family : Perpetua;
+  font-size: 17px;
+  background-color : #E4D0D0;
+  color : #815B5B;
+  padding : 15;
+  text-align: center;
+}
+
+#PerpetuaTitreSansMajuscule{
+  font-family : Perpetua;
+  color : #594545;
+  font-size : 40px;
+}
+
+h1,h2,h3 {
+  font-family : Perpetua Titling MT;
+  color : #594545;
+}
+
+li{
+  display : inline;
+}
+
+ul{
+  padding : 0;
+}
+
+a{
+  text-decoration : none;
+  color : #A75D5D;
+  background-color :#E4D0D0;
+  font-size : 18px;
+  font-weight : bold;
+  transition : 0.3s ease;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+a:hover{
+  background-color : #A75D5D;
+  color : #E4D0D0;
+}
+
+#profile-pic{
+  width : 150px;
+  height : 150px;
+  border-radius : 50%;
+  /* background-size: cover; */
+  object-fit: cover; /* pour pas déformer l'image */
+}
+
+.card{
+  Background-color : #F5EBEB;
+  padding : 25px;
+  width : 70%;
+  margin : 25px auto;
+  border-radius : 5px;
+  border : 1.5px dotted #E4D0D0;
+  line-height: 25px;
+}
+
+@media (max-width: 300px) {
+  /* Pour un écran < 300px, cette classe CSS s'applique */
+  .card {
+    width: 300px;
+  }
+  #profile-pic{
+    width: 100px;
+    height : 100px;
+  }
+}
+
+@media (min-width: 960px) {
+  /* Pour un écran > 960px, cette classe CSS s'applique */
+  .card {
+    width: 700px;
+  }
+  #profile-pic{
+    width: 200px;
+    height : 200px;
+  }
+}
